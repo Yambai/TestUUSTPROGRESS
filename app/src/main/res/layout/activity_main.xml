@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/singin"
+        android:text="UUST Progress"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_margin="50dp"
+        android:gravity="center"
+
+        />
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:background="@drawable/rounded_button"
+        android:layout_below="@id/singin"
+        android:hint="Почта от ИСУ"
+        android:textColorHint="@color/white"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/baseline_account_circle_24"
+        android:drawablePadding="20dp"
+                />
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pass_word"
+        android:background="@drawable/rounded_button"
+        android:layout_below="@id/username"
+        android:hint="Пароль"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="50dp"
+
+        android:textColor="@color/white"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/twotone_catching_pokemon_24"
+        android:drawablePadding="20dp"
+        android:inputType="textPassword"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_btn"
+        android:layout_below="@id/pass_word"
+        android:text="Войти"
+        android:backgroundTint="@color/button"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_margin="50dp"
+        android:backgroundTint="@color/gray"
+        android:id="@+id/forgotPassword"
+        android:layout_below="@id/login_btn"
+        android:text="@string/forgot_btn_text"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        tools:ignore="SmallSp" />
+
+
+</RelativeLayout>
