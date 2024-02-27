@@ -10,7 +10,7 @@
 
 
 
-    <RelativeLayout
+    <LinearLayout
         android:padding="10dp"
         android:background="#232323"
         android:id="@+id/navigation_bar_semester"
@@ -95,10 +95,10 @@
 
 
         </RelativeLayout>
-    </RelativeLayout>
+    </LinearLayout>
 
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/scroll"

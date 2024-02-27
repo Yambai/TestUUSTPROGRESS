@@ -30,13 +30,7 @@ public class SecondActivity extends AppCompatActivity {
         }
 
 
-        ImageButton left_btn = (ImageButton) findViewById(R.id.navigation_left_btn_id);
-        left_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(SecondActivity.this, "mekmfvml", Toast.LENGTH_SHORT).show();
-            }
-        });
+
 
 
 
