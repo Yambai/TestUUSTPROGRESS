@@ -7,7 +7,9 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.Layout;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,8 +30,13 @@ public class SecondActivity extends AppCompatActivity {
         }
 
 
-
-
+        ImageButton left_btn = (ImageButton) findViewById(R.id.navigation_left_btn_id);
+        left_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(SecondActivity.this, "mekmfvml", Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
 
@@ -44,24 +51,6 @@ public class SecondActivity extends AppCompatActivity {
 
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
