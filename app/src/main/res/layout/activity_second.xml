@@ -4,326 +4,374 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray"
+    android:background="#282828"
     tools:context=".SecondActivity">
 
-    <TextView
-
-        android:background="#363736"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/singin"
-        android:text="Оценки"
-        android:textColor="@color/white"
-        android:textSize="35dp"
-
-        android:textStyle="bold"
-        android:layout_marginTop="0dp"
-        android:padding="20dp"
-        android:gravity="center"
-
-
-        />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:id="@id/password_id"
-        android:layout_below="@id/singin"
-        android:gravity="center"
-        android:padding="5dp"
+        android:layout_height="50dp"
+        android:id="@id/singin">
 
-
-        >
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawable="@drawable/baseline_arrow_left_24"
-            android:layout_margin="10dp"
-            android:backgroundTint="#30ffffff"
-            />
 
         <TextView
-            android:layout_width="175dp"
-            android:layout_height="40dp"
-            android:text="5 Семетср"
-            android:background="@drawable/rounded_button"
+
+            android:layout_marginHorizontal="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Оценки"
             android:textColor="@color/white"
-            android:textStyle="bold"
-            android:paddingHorizontal="10dp"
             android:textSize="30dp"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+
 
             />
-
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawable="@drawable/baseline_arrow_right_24"
-            android:layout_margin="10dp"
-            android:backgroundTint="#30ffffff"
-            />
-
-
 
     </LinearLayout>
 
 
-
-
-
-    <LinearLayout
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:id="@+id/mark_panel_1"
-        android:layout_below="@+id/password_id"
-        android:padding="20dp"
-        android:layout_margin="15dp"
-        android:layout_marginTop="0dp"
-        android:background="@drawable/rounded_20dp"
-        android:gravity="center"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll"
+        android:layout_below="@id/singin"
 
-        >
+        android:paddingHorizontal="15dp">
 
-        <TextView
-
-        android:layout_width="250dp"
-
-        android:layout_height="wrap_content"
-        android:id="@+id/subject_1"
-        android:text="Технологии эффективных деловых и научных коммуникаций"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        android:textStyle="bold"
-            />
-
-        <TextView
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/mark_1"
-            android:paddingHorizontal="20dp"
-            android:background="@drawable/success_shape"
-            android:text="5"
-            android:layout_marginHorizontal="10dp"
-            android:textColor="#FFFFFF"
-            android:textSize="50dp"
-            android:textStyle="bold"
-            />
-    </LinearLayout>
+        <LinearLayout
+            android:paddingBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/singin"
+            android:orientation="vertical">
 
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="5dp"
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:id="@+id/mark_panel_2"
-        android:layout_below="@id/mark_panel_1"
-        android:padding="20dp"
-        android:layout_margin="15dp"
-        android:layout_marginTop="0dp"
-        android:background="@drawable/rounded_20dp"
-        android:gravity="center"
+                >
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/navigation_left_btn" />
 
 
-        >
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_height="40dp"
+                    android:text="5 Семетср"
+                    android:background="@drawable/rounded_button"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:paddingHorizontal="10dp"
+                    android:textSize="30dp"
 
-        <TextView
+                    />
 
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/subject_2"
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawable="@drawable/baseline_arrow_right_24"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="#30ffffff" />
 
-            android:text="Первая пара"
-            android:textColor="@color/white"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/mark_2"
-
-            android:paddingHorizontal="20dp"
-            android:layout_marginHorizontal="10dp"
-            android:background="@drawable/failed_shape"
-            android:text="2"
-            android:textColor="#FFFFFF"
-            android:textSize="50dp"
-            android:textStyle="bold"
-            />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/mark_panel_3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/mark_panel_2"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/rounded_20dp"
-
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="20dp">
-
-        <TextView
-
-            android:id="@+id/subject_3"
-
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:text="Yambai"
-            android:textColor="@color/white"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-
-        <TextView
-
-            android:id="@+id/mark_3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:background="@drawable/success_shape"
-            android:paddingHorizontal="20dp"
-            android:text="4"
-            android:textColor="#FFFFFF"
-            android:textSize="50dp"
-            android:textStyle="bold" />
-    </LinearLayout>
+            </LinearLayout>
 
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="27dp"
+                android:paddingVertical="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_20dp"
+
+                >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/subject_1"
+                    android:text="ых коммуниых коммуникацийых коммуникацийых коммуникацийых коммуникацийых коммуникацийых коммуникацийых коммуникацийых коммуникацийкаций"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:id="@+id/mark_panel_4"
-        android:layout_below="@id/mark_panel_3"
-        android:padding="20dp"
-        android:layout_margin="15dp"
-        android:layout_marginTop="0dp"
-        android:background="@drawable/rounded_20dp"
-        android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:background="@drawable/success_shape"
+                    android:text="5"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="27dp"
+                android:paddingVertical="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_20dp"
+
+                >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Двойка"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
 
 
-        >
+                    />
 
-        <TextView
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:background="@drawable/failed_shape"
+                    android:text="2"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
 
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/subject_4"
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="27dp"
+                android:paddingVertical="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_20dp"
 
-            android:text="Учим питон"
-            android:textColor="@color/white"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            />
+                >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/mark_4"
-
-            android:paddingHorizontal="20dp"
-            android:layout_marginHorizontal="10dp"
-            android:background="@drawable/troyak_shape"
-            android:text="3"
-            android:textColor="#FFFFFF"
-            android:textSize="50dp"
-            android:textStyle="bold"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:id="@+id/mark_panel_5"
-        android:layout_below="@id/mark_panel_4"
-        android:padding="20dp"
-        android:layout_margin="15dp"
-        android:layout_marginTop="0dp"
-        android:background="@drawable/rounded_20dp"
-        android:gravity="center"
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Тройка"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
 
 
-        >
+                    />
 
-        <TextView
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:background="@drawable/troyak_shape"
+                    android:text="3"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
 
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="27dp"
+                android:paddingVertical="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_20dp"
 
-            android:text="Учим яву"
-            android:textColor="@color/white"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            />
+                >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:paddingHorizontal="20dp"
-            android:layout_marginHorizontal="10dp"
-            android:background="@drawable/success_shape"
-            android:text="5"
-            android:textColor="#FFFFFF"
-            android:textSize="50dp"
-            android:textStyle="bold"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:id="@+id/mark_panel_6"
-        android:layout_below="@id/mark_panel_5"
-        android:padding="20dp"
-        android:layout_margin="15dp"
-        android:layout_marginTop="0dp"
-        android:background="@drawable/rounded_20dp"
-        android:gravity="center"
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Четверка"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
 
 
-        >
+                    />
 
-        <TextView
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:background="@drawable/success_shape"
+                    android:text="4"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
 
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="27dp"
+                android:paddingVertical="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_20dp"
 
-            android:text="Учим с++"
-            android:textColor="@color/white"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            />
+                >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:paddingHorizontal="20dp"
-            android:layout_marginHorizontal="10dp"
-            android:background="@drawable/failed_shape"
-            android:text="2"
-            android:textColor="#FFFFFF"
-            android:textSize="50dp"
-            android:textStyle="bold"
-            />
-    </LinearLayout>
-
-    />
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Четверка"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
 
 
+                    />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:background="@drawable/success_shape"
+                    android:text="4"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="27dp"
+                android:paddingVertical="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_20dp"
+
+                >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Четверка"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:background="@drawable/success_shape"
+                    android:text="4"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="27dp"
+                android:paddingVertical="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_20dp"
+
+                >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Четверка"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:background="@drawable/success_shape"
+                    android:text="4"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="27dp"
+                android:paddingVertical="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_20dp"
+
+                >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Четверка"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:background="@drawable/success_shape"
+                    android:text="4"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
 
 
 </RelativeLayout>
+
+    <!--    android:layout_below="@id/singin"-->
